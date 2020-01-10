@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+              <h1 id="title" class="text-center">Agriculture Product Survey Form</h1>
+              <p id="description" class="description text-center">
+                Thank you for taking the time to help us improve the standard of Agricultural output in Nigeria
+              </p>
+            </header>
+            <form id="survey-form">
+              <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label id="number-label" for="number"
+                  >Age<span class="clue">(optional)</span></label
+                >
+                <input
+                  type="number"
+                  name="age"
+                  id="number"
+                  min="10"
+                  max="99"
+                  class="form-control"
+                  placeholder="Age"
+                />
+              </div>
+              <div class="form-group">
+                <p>Which Agriculture product do you consume the most?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>Select Agric. Product</option>
+                  <option value="rice">Rice</option>
+                  <option value="beans">Beans</option>
+                  <option value="yam">Yam</option>
+                  <option value="garri">Cassava floor (Garri)</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+          
+              <div class="form-group">
+                <p>Would you encourage a friend to go into farming?</p>
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                  />Definitely</label
+                >
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"
+                  />Maybe</label
+                >
+          
+                <label
+                  ><input
+                    name="user-recommend"
+                    value="not-sure"
+                    type="radio"
+                    class="input-radio"
+                  />Not sure</label
+                >
+              </div>
+          
+                 
+              <div class="form-group">
+                <p>
+                  What would you like to see improved in Agriculture practice in Nigeria?
+                  <span class="clue">(Check all that apply)</span>
+                </p>
+          
+                <label
+                  ><input
+                    name="prefer"
+                    value="funds-for-farmers"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Avalaibility of capital for farmers</label
+                >
+                <label>
+                  <input
+                    name="prefer"
+                    value="provision-seedling"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Provision of Seedling varieties at subsidized rate</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="amenities"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Availablity of Essential Amenities</label
+                >
+            
+              </div>
+          
+              <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your comment here..."
+                ></textarea>
+              </div>
+          
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+ 
+    </body>
+</html>
